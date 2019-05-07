@@ -1,0 +1,87 @@
+{
+    "type": "object",
+    "properties": {
+        "text": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "required": false,
+            "type": "string"
+        },
+        "fromdate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "todate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "group": {
+            "required": false,
+            "type": "string"
+        },
+        "filesuffix": {
+            "required": false,
+            "type": "string"
+        },
+        "maxlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "maxlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "max": {
+            "required": false,
+            "type": "integer"
+        },
+        "skip": {
+            "required": false,
+            "type": "integer"
+        },
+        "createdate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "createdate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "search_type_hydro_colorado_site_id": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

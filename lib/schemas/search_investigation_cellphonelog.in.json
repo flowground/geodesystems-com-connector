@@ -1,0 +1,136 @@
+{
+    "type": "object",
+    "properties": {
+        "text": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "required": false,
+            "type": "string"
+        },
+        "fromdate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "todate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "group": {
+            "required": false,
+            "type": "string"
+        },
+        "filesuffix": {
+            "required": false,
+            "type": "string"
+        },
+        "maxlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "maxlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "max": {
+            "required": false,
+            "type": "integer"
+        },
+        "skip": {
+            "required": false,
+            "type": "integer"
+        },
+        "createdate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "createdate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "search_db_investigation_cellphonelog_from_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_investigation_cellphonelog_from_number": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_investigation_cellphonelog_to_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_investigation_cellphonelog_to_number": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_investigation_cellphonelog_time": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_investigation_cellphonelog_duration": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "search_db_investigation_cellphonelog_type": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_investigation_cellphonelog_location": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_investigation_cellphonelog_tower_city": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_investigation_cellphonelog_tower_state": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_investigation_cellphonelog_tower_zipcode": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_investigation_cellphonelog_tag": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_investigation_cellphonelog_notes": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

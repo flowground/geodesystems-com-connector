@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "output": {
+            "required": true,
+            "type": "string",
+            "default": "gps.teqc.qc"
+        },
+        "entryid": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

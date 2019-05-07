@@ -1,0 +1,95 @@
+{
+    "type": "object",
+    "properties": {
+        "text": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "required": false,
+            "type": "string"
+        },
+        "fromdate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "todate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "group": {
+            "required": false,
+            "type": "string"
+        },
+        "filesuffix": {
+            "required": false,
+            "type": "string"
+        },
+        "maxlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "maxlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "max": {
+            "required": false,
+            "type": "integer"
+        },
+        "skip": {
+            "required": false,
+            "type": "integer"
+        },
+        "createdate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "createdate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "search_db_contact_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_contact_institution": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_contact_email": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,205 @@
+{
+    "type": "object",
+    "properties": {
+        "text": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "required": false,
+            "type": "string"
+        },
+        "fromdate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "todate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "group": {
+            "required": false,
+            "type": "string"
+        },
+        "filesuffix": {
+            "required": false,
+            "type": "string"
+        },
+        "maxlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "maxlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "max": {
+            "required": false,
+            "type": "integer"
+        },
+        "skip": {
+            "required": false,
+            "type": "integer"
+        },
+        "createdate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "createdate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "search_db_construction_permits_address": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_case_status": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_category": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_building_uses_and_work_scopes": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_permit_types": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_total_project_value": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "search_db_construction_permits_total_subpermit_value": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "search_db_construction_permits_applied": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_approved": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_issued": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_co_date": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_completion_date": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_new_res_unit": {
+            "required": false,
+            "type": "integer"
+        },
+        "search_db_construction_permits_existing_res_unit": {
+            "required": false,
+            "type": "integer"
+        },
+        "search_db_construction_permits_affordable_hsg_unit": {
+            "required": false,
+            "type": "integer"
+        },
+        "search_db_construction_permits_new_sf": {
+            "required": false,
+            "type": "integer"
+        },
+        "search_db_construction_permits_remodel_sf": {
+            "required": false,
+            "type": "integer"
+        },
+        "search_db_construction_permits_narrative_description": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_primary_first_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_primary_last_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_primary_company": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_contractor_first_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_contractor_last_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_contractor_company": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_owner1_first_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_owner1_last_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_owner1_company": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_owner2_first_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_owner2_last_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_construction_permits_owner2_company": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

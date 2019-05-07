@@ -1,0 +1,128 @@
+{
+    "type": "object",
+    "properties": {
+        "text": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "required": false,
+            "type": "string"
+        },
+        "fromdate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "todate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "group": {
+            "required": false,
+            "type": "string"
+        },
+        "filesuffix": {
+            "required": false,
+            "type": "string"
+        },
+        "maxlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "maxlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "max": {
+            "required": false,
+            "type": "integer"
+        },
+        "skip": {
+            "required": false,
+            "type": "integer"
+        },
+        "createdate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "createdate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "search_db_boulder_consulting_services_fund": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_boulder_consulting_services_department": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_boulder_consulting_services_organization": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_boulder_consulting_services_object": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_boulder_consulting_services_project": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_boulder_consulting_services_account_description": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_boulder_consulting_services_date": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_boulder_consulting_services_amount": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "search_db_boulder_consulting_services_purchase_order": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_boulder_consulting_services_vendor_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_boulder_consulting_services_comment": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

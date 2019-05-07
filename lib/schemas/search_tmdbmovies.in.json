@@ -1,0 +1,169 @@
+{
+    "type": "object",
+    "properties": {
+        "text": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "required": false,
+            "type": "string"
+        },
+        "fromdate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "todate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "group": {
+            "required": false,
+            "type": "string"
+        },
+        "filesuffix": {
+            "required": false,
+            "type": "string"
+        },
+        "maxlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "maxlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "max": {
+            "required": false,
+            "type": "integer"
+        },
+        "skip": {
+            "required": false,
+            "type": "integer"
+        },
+        "createdate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "createdate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "search_db_tmdbmovies_original_title": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_overview": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_budget": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "search_db_tmdbmovies_genres": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_homepage": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_movie_id": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_keywords": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_original_language": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_popularity": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "search_db_tmdbmovies_production_companies": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_production_countries": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_release_date": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_revenue": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "search_db_tmdbmovies_runtime": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "search_db_tmdbmovies_spoken_languages": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_status": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_tagline": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_title": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_tmdbmovies_vote_average": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "search_db_tmdbmovies_vote_count": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        }
+    }
+}

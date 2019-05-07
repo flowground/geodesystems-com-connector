@@ -1,0 +1,4056 @@
+{
+    "title": "RAMADDA",
+    "description": "Search for data in lots of places - manage your documents, photos and critical business knowledge - communicate and coordinate with blogs, interactive wikis, and data integration dashboards.",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/geodesystems.com/1.0.0/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://geodesystems.com:443/",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            },
+            "username": {
+                "label": "Username (basic)",
+                "viewClass": "TextFieldView",
+                "note": "Basic HTTP Authentication"
+            },
+            "password": {
+                "label": "Password (basic)",
+                "viewClass": "TextFieldView",
+                "note": "Basic HTTP Authentication"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "gps_teqc_qc": {
+            "main": "./lib/actions/gps_teqc_qc.js",
+            "title": "API for View GPS QC",
+            "description": "API to call: View GPS QC",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/gps_teqc_qc.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_2017_boulder_election_expenditures": {
+            "main": "./lib/actions/search_2017_boulder_election_expenditures.js",
+            "title": "Search API for '2017 Boulder Election Expenditures' entry type",
+            "description": "API to search for entries of type 2017 Boulder Election Expenditures",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_2017_boulder_election_expenditures.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_any": {
+            "main": "./lib/actions/search_any.js",
+            "title": "Search API for 'Any file type' entry type",
+            "description": "API to search for entries of type Any file type",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_any.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_beforeafter": {
+            "main": "./lib/actions/search_beforeafter.js",
+            "title": "Search API for 'Before and After Images' entry type",
+            "description": "API to search for entries of type Before and After Images",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_beforeafter.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_biblio": {
+            "main": "./lib/actions/search_biblio.js",
+            "title": "Search API for 'Bibliographic Entry' entry type",
+            "description": "API to search for entries of type Bibliographic Entry",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_biblio.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_dicom": {
+            "main": "./lib/actions/search_bio_dicom.js",
+            "title": "Search API for 'DICOM File' entry type",
+            "description": "API to search for entries of type DICOM File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_dicom.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_dicom_test": {
+            "main": "./lib/actions/search_bio_dicom_test.js",
+            "title": "Search API for 'DICOM Test File' entry type",
+            "description": "API to search for entries of type DICOM Test File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_dicom_test.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_fasta": {
+            "main": "./lib/actions/search_bio_fasta.js",
+            "title": "Search API for 'FASTA File' entry type",
+            "description": "API to search for entries of type FASTA File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_fasta.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_fastq": {
+            "main": "./lib/actions/search_bio_fastq.js",
+            "title": "Search API for 'FASTQ File' entry type",
+            "description": "API to search for entries of type FASTQ File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_fastq.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_hmmer_index": {
+            "main": "./lib/actions/search_bio_hmmer_index.js",
+            "title": "Search API for 'HMMER Index File' entry type",
+            "description": "API to search for entries of type HMMER Index File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_hmmer_index.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_ome_tiff": {
+            "main": "./lib/actions/search_bio_ome_tiff.js",
+            "title": "Search API for 'OME TIFF File' entry type",
+            "description": "API to search for entries of type OME TIFF File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_ome_tiff.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_ontology_assay": {
+            "main": "./lib/actions/search_bio_ontology_assay.js",
+            "title": "Search API for 'Assay' entry type",
+            "description": "API to search for entries of type Assay",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_ontology_assay.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_ontology_cohort": {
+            "main": "./lib/actions/search_bio_ontology_cohort.js",
+            "title": "Search API for 'Cohort' entry type",
+            "description": "API to search for entries of type Cohort",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_ontology_cohort.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_ontology_person": {
+            "main": "./lib/actions/search_bio_ontology_person.js",
+            "title": "Search API for 'Person' entry type",
+            "description": "API to search for entries of type Person",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_ontology_person.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_ontology_sample": {
+            "main": "./lib/actions/search_bio_ontology_sample.js",
+            "title": "Search API for 'Sample' entry type",
+            "description": "API to search for entries of type Sample",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_ontology_sample.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_ontology_series": {
+            "main": "./lib/actions/search_bio_ontology_series.js",
+            "title": "Search API for 'Series' entry type",
+            "description": "API to search for entries of type Series",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_ontology_series.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_ontology_study": {
+            "main": "./lib/actions/search_bio_ontology_study.js",
+            "title": "Search API for 'Study' entry type",
+            "description": "API to search for entries of type Study",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_ontology_study.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_sam": {
+            "main": "./lib/actions/search_bio_sam.js",
+            "title": "Search API for 'SAM Data' entry type",
+            "description": "API to search for entries of type SAM Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_sam.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_sf_pdb": {
+            "main": "./lib/actions/search_bio_sf_pdb.js",
+            "title": "Search API for 'PDB Protein File' entry type",
+            "description": "API to search for entries of type PDB Protein File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_sf_pdb.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_sra": {
+            "main": "./lib/actions/search_bio_sra.js",
+            "title": "Search API for 'Sequence Read Archive' entry type",
+            "description": "API to search for entries of type Sequence Read Archive",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_sra.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_stockholm": {
+            "main": "./lib/actions/search_bio_stockholm.js",
+            "title": "Search API for 'Stockholm File' entry type",
+            "description": "API to search for entries of type Stockholm File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_stockholm.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bio_taxonomy": {
+            "main": "./lib/actions/search_bio_taxonomy.js",
+            "title": "Search API for 'Taxonomic Entry' entry type",
+            "description": "API to search for entries of type Taxonomic Entry",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bio_taxonomy.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_blogentry": {
+            "main": "./lib/actions/search_blogentry.js",
+            "title": "Search API for 'Weblog Entry' entry type",
+            "description": "API to search for entries of type Weblog Entry",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_blogentry.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bolder_rental_housing": {
+            "main": "./lib/actions/search_bolder_rental_housing.js",
+            "title": "Search API for 'Boulder Rental Housing' entry type",
+            "description": "API to search for entries of type Boulder Rental Housing",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bolder_rental_housing.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_bookmarks": {
+            "main": "./lib/actions/search_bookmarks.js",
+            "title": "Search API for 'Bookmarks' entry type",
+            "description": "API to search for entries of type Bookmarks",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_bookmarks.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_boulder_2017_election_contributions": {
+            "main": "./lib/actions/search_boulder_2017_election_contributions.js",
+            "title": "Search API for 'Boulder 2017 Election Contributions' entry type",
+            "description": "API to search for entries of type Boulder 2017 Election Contributions",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_boulder_2017_election_contributions.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_boulder_consulting_services": {
+            "main": "./lib/actions/search_boulder_consulting_services.js",
+            "title": "Search API for 'Boulder Consulting Services Database' entry type",
+            "description": "API to search for entries of type Boulder Consulting Services Database",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_boulder_consulting_services.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_boulder_county_voter_details": {
+            "main": "./lib/actions/search_boulder_county_voter_details.js",
+            "title": "Search API for 'Boulder County Voter Details' entry type",
+            "description": "API to search for entries of type Boulder County Voter Details",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_boulder_county_voter_details.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_boulder_crimes": {
+            "main": "./lib/actions/search_boulder_crimes.js",
+            "title": "Search API for 'Boulder Crime Reports' entry type",
+            "description": "API to search for entries of type Boulder Crime Reports",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_boulder_crimes.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_calendar": {
+            "main": "./lib/actions/search_calendar.js",
+            "title": "Search API for 'Calendar' entry type",
+            "description": "API to search for entries of type Calendar",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_calendar.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_cataloglink": {
+            "main": "./lib/actions/search_cataloglink.js",
+            "title": "Search API for 'Catalog Link' entry type",
+            "description": "API to search for entries of type Catalog Link",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_cataloglink.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_cdm_grid": {
+            "main": "./lib/actions/search_cdm_grid.js",
+            "title": "Search API for 'Gridded Data File' entry type",
+            "description": "API to search for entries of type Gridded Data File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_cdm_grid.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_community_case": {
+            "main": "./lib/actions/search_community_case.js",
+            "title": "Search API for 'Development Review Case' entry type",
+            "description": "API to search for entries of type Development Review Case",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_community_case.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_community_resource": {
+            "main": "./lib/actions/search_community_resource.js",
+            "title": "Search API for 'Facility' entry type",
+            "description": "API to search for entries of type Facility",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_community_resource.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_construction_permits": {
+            "main": "./lib/actions/search_construction_permits.js",
+            "title": "Search API for 'Construction Permits' entry type",
+            "description": "API to search for entries of type Construction Permits",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_construction_permits.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_contact": {
+            "main": "./lib/actions/search_contact.js",
+            "title": "Search API for 'Contact List' entry type",
+            "description": "API to search for entries of type Contact List",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_contact.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_db_co_indicators": {
+            "main": "./lib/actions/search_db_co_indicators.js",
+            "title": "Search API for 'Colorado Health Indicators' entry type",
+            "description": "API to search for entries of type Colorado Health Indicators",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_db_co_indicators.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_earth_satellite_landsat": {
+            "main": "./lib/actions/search_earth_satellite_landsat.js",
+            "title": "Search API for 'Landsat Satellite Data' entry type",
+            "description": "API to search for entries of type Landsat Satellite Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_earth_satellite_landsat.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_earth_wrf_namelist": {
+            "main": "./lib/actions/search_earth_wrf_namelist.js",
+            "title": "Search API for 'WRF Namelist File' entry type",
+            "description": "API to search for entries of type WRF Namelist File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_earth_wrf_namelist.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_exercise": {
+            "main": "./lib/actions/search_exercise.js",
+            "title": "Search API for 'Exercise' entry type",
+            "description": "API to search for entries of type Exercise",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_exercise.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_faq": {
+            "main": "./lib/actions/search_faq.js",
+            "title": "Search API for 'FAQ' entry type",
+            "description": "API to search for entries of type FAQ",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_faq.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_feed": {
+            "main": "./lib/actions/search_feed.js",
+            "title": "Search API for 'RSS/ATOM Feed' entry type",
+            "description": "API to search for entries of type RSS/ATOM Feed",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_feed.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_file": {
+            "main": "./lib/actions/search_file.js",
+            "title": "Search API for 'File' entry type",
+            "description": "API to search for entries of type File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_file.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_fits_data": {
+            "main": "./lib/actions/search_fits_data.js",
+            "title": "Search API for 'FITS Data File' entry type",
+            "description": "API to search for entries of type FITS Data File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_fits_data.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_frames": {
+            "main": "./lib/actions/search_frames.js",
+            "title": "Search API for 'IFrames' entry type",
+            "description": "API to search for entries of type IFrames",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_frames.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_ftp": {
+            "main": "./lib/actions/search_ftp.js",
+            "title": "Search API for 'Remote FTP File View' entry type",
+            "description": "API to search for entries of type Remote FTP File View",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_ftp.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_gadgets_clock": {
+            "main": "./lib/actions/search_gadgets_clock.js",
+            "title": "Search API for 'Clock' entry type",
+            "description": "API to search for entries of type Clock",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_gadgets_clock.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_gadgets_countdown": {
+            "main": "./lib/actions/search_gadgets_countdown.js",
+            "title": "Search API for 'Countdown' entry type",
+            "description": "API to search for entries of type Countdown",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_gadgets_countdown.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_gadgets_stock": {
+            "main": "./lib/actions/search_gadgets_stock.js",
+            "title": "Search API for 'Stock Ticker' entry type",
+            "description": "API to search for entries of type Stock Ticker",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_gadgets_stock.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_gadgets_weather": {
+            "main": "./lib/actions/search_gadgets_weather.js",
+            "title": "Search API for 'Weather' entry type",
+            "description": "API to search for entries of type Weather",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_gadgets_weather.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_gazeteer_census_tracts": {
+            "main": "./lib/actions/search_gazeteer_census_tracts.js",
+            "title": "Search API for 'Census Tracts' entry type",
+            "description": "API to search for entries of type Census Tracts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_gazeteer_census_tracts.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_gazeteer_counties": {
+            "main": "./lib/actions/search_gazeteer_counties.js",
+            "title": "Search API for 'Census Gazeteer Counties' entry type",
+            "description": "API to search for entries of type Census Gazeteer Counties",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_gazeteer_counties.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_gdata_docs": {
+            "main": "./lib/actions/search_gdata_docs.js",
+            "title": "Search API for 'Google Docs View' entry type",
+            "description": "API to search for entries of type Google Docs View",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_gdata_docs.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_gdata_photos": {
+            "main": "./lib/actions/search_gdata_photos.js",
+            "title": "Search API for 'Google Web Albums View' entry type",
+            "description": "API to search for entries of type Google Web Albums View",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_gdata_photos.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_geo_geotiff": {
+            "main": "./lib/actions/search_geo_geotiff.js",
+            "title": "Search API for 'GeoTIFF' entry type",
+            "description": "API to search for entries of type GeoTIFF",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_geo_geotiff.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_geo_gpx": {
+            "main": "./lib/actions/search_geo_gpx.js",
+            "title": "Search API for 'GPX GPS File' entry type",
+            "description": "API to search for entries of type GPX GPS File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_geo_gpx.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_geo_hdf5": {
+            "main": "./lib/actions/search_geo_hdf5.js",
+            "title": "Search API for 'HDF5 File' entry type",
+            "description": "API to search for entries of type HDF5 File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_geo_hdf5.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_geo_kml": {
+            "main": "./lib/actions/search_geo_kml.js",
+            "title": "Search API for 'KML/KMZ File' entry type",
+            "description": "API to search for entries of type KML/KMZ File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_geo_kml.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_geo_shapefile": {
+            "main": "./lib/actions/search_geo_shapefile.js",
+            "title": "Search API for 'Shapefile' entry type",
+            "description": "API to search for entries of type Shapefile",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_geo_shapefile.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_glossary": {
+            "main": "./lib/actions/search_glossary.js",
+            "title": "Search API for 'Glossary' entry type",
+            "description": "API to search for entries of type Glossary",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_glossary.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_gridaggregation": {
+            "main": "./lib/actions/search_gridaggregation.js",
+            "title": "Search API for 'Grid Aggregation' entry type",
+            "description": "API to search for entries of type Grid Aggregation",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_gridaggregation.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_group": {
+            "main": "./lib/actions/search_group.js",
+            "title": "Search API for 'Folder' entry type",
+            "description": "API to search for entries of type Folder",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_group.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_hipchat_group": {
+            "main": "./lib/actions/search_hipchat_group.js",
+            "title": "Search API for 'HipChat Group' entry type",
+            "description": "API to search for entries of type HipChat Group",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_hipchat_group.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_homepage": {
+            "main": "./lib/actions/search_homepage.js",
+            "title": "Search API for 'Home Page' entry type",
+            "description": "API to search for entries of type Home Page",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_homepage.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_incident": {
+            "main": "./lib/actions/search_incident.js",
+            "title": "Search API for 'Incident' entry type",
+            "description": "API to search for entries of type Incident",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_incident.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_incident_basement": {
+            "main": "./lib/actions/search_incident_basement.js",
+            "title": "Search API for 'Basement Flooding' entry type",
+            "description": "API to search for entries of type Basement Flooding",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_incident_basement.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_investigation_case": {
+            "main": "./lib/actions/search_investigation_case.js",
+            "title": "Search API for 'Investigation' entry type",
+            "description": "API to search for entries of type Investigation",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_investigation_case.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_investigation_cellphonelog": {
+            "main": "./lib/actions/search_investigation_cellphonelog.js",
+            "title": "Search API for 'Cell Phone Log' entry type",
+            "description": "API to search for entries of type Cell Phone Log",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_investigation_cellphonelog.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_investigation_event": {
+            "main": "./lib/actions/search_investigation_event.js",
+            "title": "Search API for 'Event' entry type",
+            "description": "API to search for entries of type Event",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_investigation_event.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_investigation_oldphonelog": {
+            "main": "./lib/actions/search_investigation_oldphonelog.js",
+            "title": "Search API for 'Old Phone Log' entry type",
+            "description": "API to search for entries of type Old Phone Log",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_investigation_oldphonelog.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_investigation_person": {
+            "main": "./lib/actions/search_investigation_person.js",
+            "title": "Search API for 'Person' entry type",
+            "description": "API to search for entries of type Person",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_investigation_person.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_investigation_thing": {
+            "main": "./lib/actions/search_investigation_thing.js",
+            "title": "Search API for 'Thing' entry type",
+            "description": "API to search for entries of type Thing",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_investigation_thing.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_latlonimage": {
+            "main": "./lib/actions/search_latlonimage.js",
+            "title": "Search API for 'WMS Image' entry type",
+            "description": "API to search for entries of type WMS Image",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_latlonimage.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_lidar_collection": {
+            "main": "./lib/actions/search_lidar_collection.js",
+            "title": "Search API for 'LiDAR Collection' entry type",
+            "description": "API to search for entries of type LiDAR Collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_lidar_collection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_lidar_glas": {
+            "main": "./lib/actions/search_lidar_glas.js",
+            "title": "Search API for 'GLAS Lidar Data' entry type",
+            "description": "API to search for entries of type GLAS Lidar Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_lidar_glas.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_lidar_las": {
+            "main": "./lib/actions/search_lidar_las.js",
+            "title": "Search API for 'LAS Lidar Data' entry type",
+            "description": "API to search for entries of type LAS Lidar Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_lidar_las.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_lidar_lvis": {
+            "main": "./lib/actions/search_lidar_lvis.js",
+            "title": "Search API for 'LVIS Lidar Data' entry type",
+            "description": "API to search for entries of type LVIS Lidar Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_lidar_lvis.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_link": {
+            "main": "./lib/actions/search_link.js",
+            "title": "Search API for 'Link' entry type",
+            "description": "API to search for entries of type Link",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_link.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_localfiles": {
+            "main": "./lib/actions/search_localfiles.js",
+            "title": "Search API for 'Server Side Files' entry type",
+            "description": "API to search for entries of type Server Side Files",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_localfiles.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_locations": {
+            "main": "./lib/actions/search_locations.js",
+            "title": "Search API for 'Locations' entry type",
+            "description": "API to search for entries of type Locations",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_locations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_map_googlemap": {
+            "main": "./lib/actions/search_map_googlemap.js",
+            "title": "Search API for 'Google Map URL' entry type",
+            "description": "API to search for entries of type Google Map URL",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_map_googlemap.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_media_audiofile": {
+            "main": "./lib/actions/search_media_audiofile.js",
+            "title": "Search API for 'Audio File' entry type",
+            "description": "API to search for entries of type Audio File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_media_audiofile.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_media_imageloop": {
+            "main": "./lib/actions/search_media_imageloop.js",
+            "title": "Search API for 'Image Loop' entry type",
+            "description": "API to search for entries of type Image Loop",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_media_imageloop.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_media_photoalbum": {
+            "main": "./lib/actions/search_media_photoalbum.js",
+            "title": "Search API for 'Photo Album' entry type",
+            "description": "API to search for entries of type Photo Album",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_media_photoalbum.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_media_video_channel": {
+            "main": "./lib/actions/search_media_video_channel.js",
+            "title": "Search API for 'Video Channel' entry type",
+            "description": "API to search for entries of type Video Channel",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_media_video_channel.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_media_video_quicktime": {
+            "main": "./lib/actions/search_media_video_quicktime.js",
+            "title": "Search API for 'Quicktime Video' entry type",
+            "description": "API to search for entries of type Quicktime Video",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_media_video_quicktime.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_media_youtubevideo": {
+            "main": "./lib/actions/search_media_youtubevideo.js",
+            "title": "Search API for 'YouTube Video' entry type",
+            "description": "API to search for entries of type YouTube Video",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_media_youtubevideo.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_multisearch": {
+            "main": "./lib/actions/search_multisearch.js",
+            "title": "Search API for 'Multiple Search' entry type",
+            "description": "API to search for entries of type Multiple Search",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_multisearch.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_nga_tracks": {
+            "main": "./lib/actions/search_nga_tracks.js",
+            "title": "Search API for 'NGA Tracks' entry type",
+            "description": "API to search for entries of type NGA Tracks",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_nga_tracks.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_notes": {
+            "main": "./lib/actions/search_notes.js",
+            "title": "Search API for 'Notes' entry type",
+            "description": "API to search for entries of type Notes",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_notes.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_notes_note": {
+            "main": "./lib/actions/search_notes_note.js",
+            "title": "Search API for 'Note' entry type",
+            "description": "API to search for entries of type Note",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_notes_note.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_opendaplink": {
+            "main": "./lib/actions/search_opendaplink.js",
+            "title": "Search API for 'OPeNDAP Link' entry type",
+            "description": "API to search for entries of type OPeNDAP Link",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_opendaplink.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_owl_class": {
+            "main": "./lib/actions/search_owl_class.js",
+            "title": "Search API for 'OWL Class' entry type",
+            "description": "API to search for entries of type OWL Class",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_owl_class.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_owl_ontology": {
+            "main": "./lib/actions/search_owl_ontology.js",
+            "title": "Search API for 'OWL Ontology' entry type",
+            "description": "API to search for entries of type OWL Ontology",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_owl_ontology.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_pasteitentry": {
+            "main": "./lib/actions/search_pasteitentry.js",
+            "title": "Search API for 'Paste Text Entry' entry type",
+            "description": "API to search for entries of type Paste Text Entry",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_pasteitentry.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_point_text": {
+            "main": "./lib/actions/search_point_text.js",
+            "title": "Search API for 'Text Point Data' entry type",
+            "description": "API to search for entries of type Text Point Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_point_text.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_poll": {
+            "main": "./lib/actions/search_poll.js",
+            "title": "Search API for 'Poll' entry type",
+            "description": "API to search for entries of type Poll",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_poll.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_campaign": {
+            "main": "./lib/actions/search_project_campaign.js",
+            "title": "Search API for 'Campaign' entry type",
+            "description": "API to search for entries of type Campaign",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_campaign.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_casestudy": {
+            "main": "./lib/actions/search_project_casestudy.js",
+            "title": "Search API for 'Case Study' entry type",
+            "description": "API to search for entries of type Case Study",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_casestudy.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_contribution": {
+            "main": "./lib/actions/search_project_contribution.js",
+            "title": "Search API for 'Research Contribution' entry type",
+            "description": "API to search for entries of type Research Contribution",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_contribution.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_dataformat": {
+            "main": "./lib/actions/search_project_dataformat.js",
+            "title": "Search API for 'Data Format' entry type",
+            "description": "API to search for entries of type Data Format",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_dataformat.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_dataset": {
+            "main": "./lib/actions/search_project_dataset.js",
+            "title": "Search API for 'Dataset' entry type",
+            "description": "API to search for entries of type Dataset",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_dataset.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_deployment": {
+            "main": "./lib/actions/search_project_deployment.js",
+            "title": "Search API for 'Deployment' entry type",
+            "description": "API to search for entries of type Deployment",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_deployment.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_experiment": {
+            "main": "./lib/actions/search_project_experiment.js",
+            "title": "Search API for 'Experiment' entry type",
+            "description": "API to search for entries of type Experiment",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_experiment.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_fieldnote": {
+            "main": "./lib/actions/search_project_fieldnote.js",
+            "title": "Search API for 'Field Note' entry type",
+            "description": "API to search for entries of type Field Note",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_fieldnote.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_gps_controlpoints": {
+            "main": "./lib/actions/search_project_gps_controlpoints.js",
+            "title": "Search API for 'Control Points File' entry type",
+            "description": "API to search for entries of type Control Points File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_gps_controlpoints.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_gps_raw": {
+            "main": "./lib/actions/search_project_gps_raw.js",
+            "title": "Search API for 'Raw GPS File' entry type",
+            "description": "API to search for entries of type Raw GPS File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_gps_raw.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_gps_rinex": {
+            "main": "./lib/actions/search_project_gps_rinex.js",
+            "title": "Search API for 'RINEX File' entry type",
+            "description": "API to search for entries of type RINEX File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_gps_rinex.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_instrument": {
+            "main": "./lib/actions/search_project_instrument.js",
+            "title": "Search API for 'Instrument Data Collection' entry type",
+            "description": "API to search for entries of type Instrument Data Collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_instrument.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_learning_resource": {
+            "main": "./lib/actions/search_project_learning_resource.js",
+            "title": "Search API for 'Teaching Resource' entry type",
+            "description": "API to search for entries of type Teaching Resource",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_learning_resource.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_meeting": {
+            "main": "./lib/actions/search_project_meeting.js",
+            "title": "Search API for 'Meeting' entry type",
+            "description": "API to search for entries of type Meeting",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_meeting.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_organization": {
+            "main": "./lib/actions/search_project_organization.js",
+            "title": "Search API for 'Organization' entry type",
+            "description": "API to search for entries of type Organization",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_organization.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_program": {
+            "main": "./lib/actions/search_project_program.js",
+            "title": "Search API for 'Program' entry type",
+            "description": "API to search for entries of type Program",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_program.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_project": {
+            "main": "./lib/actions/search_project_project.js",
+            "title": "Search API for 'Project' entry type",
+            "description": "API to search for entries of type Project",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_project.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_service": {
+            "main": "./lib/actions/search_project_service.js",
+            "title": "Search API for 'Data Access Service' entry type",
+            "description": "API to search for entries of type Data Access Service",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_service.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_site": {
+            "main": "./lib/actions/search_project_site.js",
+            "title": "Search API for 'Site' entry type",
+            "description": "API to search for entries of type Site",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_site.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_softwarepackage": {
+            "main": "./lib/actions/search_project_softwarepackage.js",
+            "title": "Search API for 'Software Tool' entry type",
+            "description": "API to search for entries of type Software Tool",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_softwarepackage.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_standard_name": {
+            "main": "./lib/actions/search_project_standard_name.js",
+            "title": "Search API for 'Standard Parameter Name' entry type",
+            "description": "API to search for entries of type Standard Parameter Name",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_standard_name.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_surveylocation": {
+            "main": "./lib/actions/search_project_surveylocation.js",
+            "title": "Search API for 'Survey Location' entry type",
+            "description": "API to search for entries of type Survey Location",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_surveylocation.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_term": {
+            "main": "./lib/actions/search_project_term.js",
+            "title": "Search API for 'Vocabulary Term' entry type",
+            "description": "API to search for entries of type Vocabulary Term",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_term.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_visit": {
+            "main": "./lib/actions/search_project_visit.js",
+            "title": "Search API for 'Site Visit' entry type",
+            "description": "API to search for entries of type Site Visit",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_visit.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_project_vocabulary": {
+            "main": "./lib/actions/search_project_vocabulary.js",
+            "title": "Search API for 'Vocabulary' entry type",
+            "description": "API to search for entries of type Vocabulary",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_project_vocabulary.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_property_sales": {
+            "main": "./lib/actions/search_property_sales.js",
+            "title": "Search API for 'Property Sales' entry type",
+            "description": "API to search for entries of type Property Sales",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_property_sales.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_propertydb": {
+            "main": "./lib/actions/search_propertydb.js",
+            "title": "Search API for 'Property Database' entry type",
+            "description": "API to search for entries of type Property Database",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_propertydb.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_python_notebook": {
+            "main": "./lib/actions/search_python_notebook.js",
+            "title": "Search API for 'IPython Notebook file' entry type",
+            "description": "API to search for entries of type IPython Notebook file",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_python_notebook.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_registrations": {
+            "main": "./lib/actions/search_registrations.js",
+            "title": "Search API for 'Registrations' entry type",
+            "description": "API to search for entries of type Registrations",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_registrations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_slack_team": {
+            "main": "./lib/actions/search_slack_team.js",
+            "title": "Search API for 'Slack Team' entry type",
+            "description": "API to search for entries of type Slack Team",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_slack_team.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_statusboard": {
+            "main": "./lib/actions/search_statusboard.js",
+            "title": "Search API for 'Status Board' entry type",
+            "description": "API to search for entries of type Status Board",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_statusboard.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_tasks": {
+            "main": "./lib/actions/search_tasks.js",
+            "title": "Search API for 'Tasks' entry type",
+            "description": "API to search for entries of type Tasks",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_tasks.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_tmdbmovies": {
+            "main": "./lib/actions/search_tmdbmovies.js",
+            "title": "Search API for 'Tmdb Movies' entry type",
+            "description": "API to search for entries of type Tmdb Movies",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_tmdbmovies.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_todo": {
+            "main": "./lib/actions/search_todo.js",
+            "title": "Search API for 'Todo' entry type",
+            "description": "API to search for entries of type Todo",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_todo.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_trip_event": {
+            "main": "./lib/actions/search_trip_event.js",
+            "title": "Search API for 'Event' entry type",
+            "description": "API to search for entries of type Event",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_trip_event.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_trip_flight": {
+            "main": "./lib/actions/search_trip_flight.js",
+            "title": "Search API for 'Flight Leg' entry type",
+            "description": "API to search for entries of type Flight Leg",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_trip_flight.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_trip_hotel": {
+            "main": "./lib/actions/search_trip_hotel.js",
+            "title": "Search API for 'Lodging' entry type",
+            "description": "API to search for entries of type Lodging",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_trip_hotel.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_trip_report": {
+            "main": "./lib/actions/search_trip_report.js",
+            "title": "Search API for 'Trip Report' entry type",
+            "description": "API to search for entries of type Trip Report",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_trip_report.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_trip_trip": {
+            "main": "./lib/actions/search_trip_trip.js",
+            "title": "Search API for 'Trip' entry type",
+            "description": "API to search for entries of type Trip",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_trip_trip.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_artists_space": {
+            "main": "./lib/actions/search_type_artists_space.js",
+            "title": "Search API for 'Artists Space' entry type",
+            "description": "API to search for entries of type Artists Space",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_artists_space.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_awc_metar": {
+            "main": "./lib/actions/search_type_awc_metar.js",
+            "title": "Search API for 'AWC Weather Observations' entry type",
+            "description": "API to search for entries of type AWC Weather Observations",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_awc_metar.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_awhere_farm": {
+            "main": "./lib/actions/search_type_awhere_farm.js",
+            "title": "Search API for 'aWhere Farm' entry type",
+            "description": "API to search for entries of type aWhere Farm",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_awhere_farm.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_awhere_field": {
+            "main": "./lib/actions/search_type_awhere_field.js",
+            "title": "Search API for 'aWhere Field' entry type",
+            "description": "API to search for entries of type aWhere Field",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_awhere_field.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_biz_stockseries": {
+            "main": "./lib/actions/search_type_biz_stockseries.js",
+            "title": "Search API for 'Stock Ticker Data' entry type",
+            "description": "API to search for entries of type Stock Ticker Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_biz_stockseries.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_census_acs": {
+            "main": "./lib/actions/search_type_census_acs.js",
+            "title": "Search API for 'US Census ACS Data' entry type",
+            "description": "API to search for entries of type US Census ACS Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_census_acs.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_db_table": {
+            "main": "./lib/actions/search_type_db_table.js",
+            "title": "Search API for 'Database Table' entry type",
+            "description": "API to search for entries of type Database Table",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_db_table.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_document_csv": {
+            "main": "./lib/actions/search_type_document_csv.js",
+            "title": "Search API for 'CSV File' entry type",
+            "description": "API to search for entries of type CSV File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_document_csv.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_document_doc": {
+            "main": "./lib/actions/search_type_document_doc.js",
+            "title": "Search API for 'Microsoft Word File' entry type",
+            "description": "API to search for entries of type Microsoft Word File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_document_doc.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_document_html": {
+            "main": "./lib/actions/search_type_document_html.js",
+            "title": "Search API for 'HTML File' entry type",
+            "description": "API to search for entries of type HTML File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_document_html.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_document_pdf": {
+            "main": "./lib/actions/search_type_document_pdf.js",
+            "title": "Search API for 'PDF File' entry type",
+            "description": "API to search for entries of type PDF File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_document_pdf.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_document_ppt": {
+            "main": "./lib/actions/search_type_document_ppt.js",
+            "title": "Search API for 'Microsoft Powerpoint File' entry type",
+            "description": "API to search for entries of type Microsoft Powerpoint File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_document_ppt.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_document_xls": {
+            "main": "./lib/actions/search_type_document_xls.js",
+            "title": "Search API for 'Microsoft Excel File' entry type",
+            "description": "API to search for entries of type Microsoft Excel File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_document_xls.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_drilsdown_casestudy": {
+            "main": "./lib/actions/search_type_drilsdown_casestudy.js",
+            "title": "Search API for 'Drilsdown Case Study' entry type",
+            "description": "API to search for entries of type Drilsdown Case Study",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_drilsdown_casestudy.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_edgar_filing": {
+            "main": "./lib/actions/search_type_edgar_filing.js",
+            "title": "Search API for 'SEC EDGAR Filing' entry type",
+            "description": "API to search for entries of type SEC EDGAR Filing",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_edgar_filing.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_eia_category": {
+            "main": "./lib/actions/search_type_eia_category.js",
+            "title": "Search API for 'EIA Category' entry type",
+            "description": "API to search for entries of type EIA Category",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_eia_category.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_eia_series": {
+            "main": "./lib/actions/search_type_eia_series.js",
+            "title": "Search API for 'EIA Series' entry type",
+            "description": "API to search for entries of type EIA Series",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_eia_series.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_esri_featureserver": {
+            "main": "./lib/actions/search_type_esri_featureserver.js",
+            "title": "Search API for 'ESRI Feature Server' entry type",
+            "description": "API to search for entries of type ESRI Feature Server",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_esri_featureserver.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_esri_geometryserver": {
+            "main": "./lib/actions/search_type_esri_geometryserver.js",
+            "title": "Search API for 'ESRI Geometry Server' entry type",
+            "description": "API to search for entries of type ESRI Geometry Server",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_esri_geometryserver.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_esri_gpserver": {
+            "main": "./lib/actions/search_type_esri_gpserver.js",
+            "title": "Search API for 'ESRI GP Server' entry type",
+            "description": "API to search for entries of type ESRI GP Server",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_esri_gpserver.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_esri_imageserver": {
+            "main": "./lib/actions/search_type_esri_imageserver.js",
+            "title": "Search API for 'ESRI Image Server' entry type",
+            "description": "API to search for entries of type ESRI Image Server",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_esri_imageserver.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_esri_layer": {
+            "main": "./lib/actions/search_type_esri_layer.js",
+            "title": "Search API for 'ESRI Layer' entry type",
+            "description": "API to search for entries of type ESRI Layer",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_esri_layer.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_esri_mapserver": {
+            "main": "./lib/actions/search_type_esri_mapserver.js",
+            "title": "Search API for 'ESRI Map Server' entry type",
+            "description": "API to search for entries of type ESRI Map Server",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_esri_mapserver.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_esri_restfolder": {
+            "main": "./lib/actions/search_type_esri_restfolder.js",
+            "title": "Search API for 'ESRI Services Folder' entry type",
+            "description": "API to search for entries of type ESRI Services Folder",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_esri_restfolder.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_esri_restserver": {
+            "main": "./lib/actions/search_type_esri_restserver.js",
+            "title": "Search API for 'ESRI Web Server' entry type",
+            "description": "API to search for entries of type ESRI Web Server",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_esri_restserver.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_esri_restservice": {
+            "main": "./lib/actions/search_type_esri_restservice.js",
+            "title": "Search API for 'ESRI Rest Service' entry type",
+            "description": "API to search for entries of type ESRI Rest Service",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_esri_restservice.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_fred_category": {
+            "main": "./lib/actions/search_type_fred_category.js",
+            "title": "Search API for 'FRED Category' entry type",
+            "description": "API to search for entries of type FRED Category",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_fred_category.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_fred_series": {
+            "main": "./lib/actions/search_type_fred_series.js",
+            "title": "Search API for 'FRED Series' entry type",
+            "description": "API to search for entries of type FRED Series",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_fred_series.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_gtfs_agency": {
+            "main": "./lib/actions/search_type_gtfs_agency.js",
+            "title": "Search API for 'Transit Agency' entry type",
+            "description": "API to search for entries of type Transit Agency",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_gtfs_agency.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_gtfs_route": {
+            "main": "./lib/actions/search_type_gtfs_route.js",
+            "title": "Search API for 'Transit Route' entry type",
+            "description": "API to search for entries of type Transit Route",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_gtfs_route.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_gtfs_routes": {
+            "main": "./lib/actions/search_type_gtfs_routes.js",
+            "title": "Search API for 'Transit Route Collection' entry type",
+            "description": "API to search for entries of type Transit Route Collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_gtfs_routes.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_gtfs_stop": {
+            "main": "./lib/actions/search_type_gtfs_stop.js",
+            "title": "Search API for 'Transit Stop' entry type",
+            "description": "API to search for entries of type Transit Stop",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_gtfs_stop.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_gtfs_stops": {
+            "main": "./lib/actions/search_type_gtfs_stops.js",
+            "title": "Search API for 'Transit Stop Collection' entry type",
+            "description": "API to search for entries of type Transit Stop Collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_gtfs_stops.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_gtfs_trip": {
+            "main": "./lib/actions/search_type_gtfs_trip.js",
+            "title": "Search API for 'Transit Trip' entry type",
+            "description": "API to search for entries of type Transit Trip",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_gtfs_trip.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_hazarddata": {
+            "main": "./lib/actions/search_type_hazarddata.js",
+            "title": "Search API for 'Hazard Data' entry type",
+            "description": "API to search for entries of type Hazard Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_hazarddata.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_hydro_colorado": {
+            "main": "./lib/actions/search_type_hydro_colorado.js",
+            "title": "Search API for 'Colorado DNR Stream Gage' entry type",
+            "description": "API to search for entries of type Colorado DNR Stream Gage",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_hydro_colorado.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_idv_bundle": {
+            "main": "./lib/actions/search_type_idv_bundle.js",
+            "title": "Search API for 'IDV Bundle' entry type",
+            "description": "API to search for entries of type IDV Bundle",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_idv_bundle.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_image": {
+            "main": "./lib/actions/search_type_image.js",
+            "title": "Search API for 'Image' entry type",
+            "description": "API to search for entries of type Image",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_image.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_image_airport": {
+            "main": "./lib/actions/search_type_image_airport.js",
+            "title": "Search API for 'Airport Image' entry type",
+            "description": "API to search for entries of type Airport Image",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_image_airport.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_mb": {
+            "main": "./lib/actions/search_type_mb.js",
+            "title": "Search API for 'MB Bathymetry' entry type",
+            "description": "API to search for entries of type MB Bathymetry",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_mb.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_mb_collection": {
+            "main": "./lib/actions/search_type_mb_collection.js",
+            "title": "Search API for 'Bathymetry Collection' entry type",
+            "description": "API to search for entries of type Bathymetry Collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_mb_collection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_mb_point_basic": {
+            "main": "./lib/actions/search_type_mb_point_basic.js",
+            "title": "Search API for 'Basic MB point file' entry type",
+            "description": "API to search for entries of type Basic MB point file",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_mb_point_basic.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_metameta_collection": {
+            "main": "./lib/actions/search_type_metameta_collection.js",
+            "title": "Search API for 'Data Dictionary: Metadata Collection' entry type",
+            "description": "API to search for entries of type Data Dictionary: Metadata Collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_metameta_collection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_metameta_dictionary": {
+            "main": "./lib/actions/search_type_metameta_dictionary.js",
+            "title": "Search API for 'Data Dictionary: Metadata Dictionary' entry type",
+            "description": "API to search for entries of type Data Dictionary: Metadata Dictionary",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_metameta_dictionary.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_metameta_field": {
+            "main": "./lib/actions/search_type_metameta_field.js",
+            "title": "Search API for 'Data Dictionary: Metadata Field' entry type",
+            "description": "API to search for entries of type Data Dictionary: Metadata Field",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_metameta_field.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_nist_constant": {
+            "main": "./lib/actions/search_type_nist_constant.js",
+            "title": "Search API for 'CODATA Fundamental Physical Constants' entry type",
+            "description": "API to search for entries of type CODATA Fundamental Physical Constants",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_nist_constant.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_nist_energy": {
+            "main": "./lib/actions/search_type_nist_energy.js",
+            "title": "Search API for 'NIST Ionization Energy Data' entry type",
+            "description": "API to search for entries of type NIST Ionization Energy Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_nist_energy.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_nist_isotope": {
+            "main": "./lib/actions/search_type_nist_isotope.js",
+            "title": "Search API for 'NIST Isotope' entry type",
+            "description": "API to search for entries of type NIST Isotope",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_nist_isotope.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_nist_janaffile": {
+            "main": "./lib/actions/search_type_nist_janaffile.js",
+            "title": "Search API for 'NIST JANAF Thermochemical Table' entry type",
+            "description": "API to search for entries of type NIST JANAF Thermochemical Table",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_nist_janaffile.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_nitf": {
+            "main": "./lib/actions/search_type_nitf.js",
+            "title": "Search API for 'NITF File' entry type",
+            "description": "API to search for entries of type NITF File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_nitf.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_ameriflux_level2": {
+            "main": "./lib/actions/search_type_point_ameriflux_level2.js",
+            "title": "Search API for 'Ameriflux Level 2 CSV File' entry type",
+            "description": "API to search for entries of type Ameriflux Level 2 CSV File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_ameriflux_level2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_amrc_final": {
+            "main": "./lib/actions/search_type_point_amrc_final.js",
+            "title": "Search API for 'AMRC Final QC Data' entry type",
+            "description": "API to search for entries of type AMRC Final QC Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_amrc_final.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_amrc_freewave": {
+            "main": "./lib/actions/search_type_point_amrc_freewave.js",
+            "title": "Search API for 'AMRC Freewave  Data' entry type",
+            "description": "API to search for entries of type AMRC Freewave  Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_amrc_freewave.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_collection": {
+            "main": "./lib/actions/search_type_point_collection.js",
+            "title": "Search API for 'Point Data Collection' entry type",
+            "description": "API to search for entries of type Point Data Collection",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_collection.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_czo": {
+            "main": "./lib/actions/search_type_point_czo.js",
+            "title": "Search API for 'CZO Display File Format' entry type",
+            "description": "API to search for entries of type CZO Display File Format",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_czo.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_gcnet": {
+            "main": "./lib/actions/search_type_point_gcnet.js",
+            "title": "Search API for 'GC-Net Point Data' entry type",
+            "description": "API to search for entries of type GC-Net Point Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_gcnet.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_geomag_iaga2002": {
+            "main": "./lib/actions/search_type_point_geomag_iaga2002.js",
+            "title": "Search API for 'IAGA 2002 Geomagnetism Data' entry type",
+            "description": "API to search for entries of type IAGA 2002 Geomagnetism Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_geomag_iaga2002.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_hydro_waterml": {
+            "main": "./lib/actions/search_type_point_hydro_waterml.js",
+            "title": "Search API for 'WaterML' entry type",
+            "description": "API to search for entries of type WaterML",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_hydro_waterml.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_icebridge_atm_icessn": {
+            "main": "./lib/actions/search_type_point_icebridge_atm_icessn.js",
+            "title": "Search API for 'ATM Ice SSN Data' entry type",
+            "description": "API to search for entries of type ATM Ice SSN Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_icebridge_atm_icessn.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_icebridge_atm_qfit": {
+            "main": "./lib/actions/search_type_point_icebridge_atm_qfit.js",
+            "title": "Search API for 'ATM QFIT Data' entry type",
+            "description": "API to search for entries of type ATM QFIT Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_icebridge_atm_qfit.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_icebridge_mccords_irmcr2": {
+            "main": "./lib/actions/search_type_point_icebridge_mccords_irmcr2.js",
+            "title": "Search API for 'McCords Irmcr2 Data' entry type",
+            "description": "API to search for entries of type McCords Irmcr2 Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_icebridge_mccords_irmcr2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_icebridge_mccords_irmcr3": {
+            "main": "./lib/actions/search_type_point_icebridge_mccords_irmcr3.js",
+            "title": "Search API for 'McCords Irmcr3 Data' entry type",
+            "description": "API to search for entries of type McCords Irmcr3 Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_icebridge_mccords_irmcr3.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_icebridge_paris": {
+            "main": "./lib/actions/search_type_point_icebridge_paris.js",
+            "title": "Search API for 'Paris Data' entry type",
+            "description": "API to search for entries of type Paris Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_icebridge_paris.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_idv": {
+            "main": "./lib/actions/search_type_point_idv.js",
+            "title": "Search API for 'IDV Point File' entry type",
+            "description": "API to search for entries of type IDV Point File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_idv.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_ncdc_climate": {
+            "main": "./lib/actions/search_type_point_ncdc_climate.js",
+            "title": "Search API for 'NC  DC Climate Data' entry type",
+            "description": "API to search for entries of type NC  DC Climate Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_ncdc_climate.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_netcdf": {
+            "main": "./lib/actions/search_type_point_netcdf.js",
+            "title": "Search API for 'NetCDF Point File' entry type",
+            "description": "API to search for entries of type NetCDF Point File",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_netcdf.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_noaa_carbon": {
+            "main": "./lib/actions/search_type_point_noaa_carbon.js",
+            "title": "Search API for 'NOAA Carbon Measurements' entry type",
+            "description": "API to search for entries of type NOAA Carbon Measurements",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_noaa_carbon.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_noaa_flask_event": {
+            "main": "./lib/actions/search_type_point_noaa_flask_event.js",
+            "title": "Search API for 'NOAA Flask Event Measurements' entry type",
+            "description": "API to search for entries of type NOAA Flask Event Measurements",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_noaa_flask_event.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_noaa_flask_month": {
+            "main": "./lib/actions/search_type_point_noaa_flask_month.js",
+            "title": "Search API for 'NOAA Flask Month Measurements' entry type",
+            "description": "API to search for entries of type NOAA Flask Month Measurements",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_noaa_flask_month.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_noaa_madis": {
+            "main": "./lib/actions/search_type_point_noaa_madis.js",
+            "title": "Search API for 'NOAA MADIS Point Data' entry type",
+            "description": "API to search for entries of type NOAA MADIS Point Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_noaa_madis.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_noaa_tower": {
+            "main": "./lib/actions/search_type_point_noaa_tower.js",
+            "title": "Search API for 'NOAA Tower Network' entry type",
+            "description": "API to search for entries of type NOAA Tower Network",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_noaa_tower.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_ocean_cnv": {
+            "main": "./lib/actions/search_type_point_ocean_cnv.js",
+            "title": "Search API for 'SeaBird CNV Data' entry type",
+            "description": "API to search for entries of type SeaBird CNV Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_ocean_cnv.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_ocean_csv_sado_TTS": {
+            "main": "./lib/actions/search_type_point_ocean_csv_sado_TTS.js",
+            "title": "Search API for 'SADO TTS Data' entry type",
+            "description": "API to search for entries of type SADO TTS Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_ocean_csv_sado_TTS.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_ocean_csv_sado_meteo": {
+            "main": "./lib/actions/search_type_point_ocean_csv_sado_meteo.js",
+            "title": "Search API for 'SADO Meteo Data' entry type",
+            "description": "API to search for entries of type SADO Meteo Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_ocean_csv_sado_meteo.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_ocean_csv_sado_position": {
+            "main": "./lib/actions/search_type_point_ocean_csv_sado_position.js",
+            "title": "Search API for 'SADO Position Data' entry type",
+            "description": "API to search for entries of type SADO Position Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_ocean_csv_sado_position.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_ocean_netcdf_glider": {
+            "main": "./lib/actions/search_type_point_ocean_netcdf_glider.js",
+            "title": "Search API for 'NetCDF Glider Data' entry type",
+            "description": "API to search for entries of type NetCDF Glider Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_ocean_netcdf_glider.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_ocean_netcdf_track": {
+            "main": "./lib/actions/search_type_point_ocean_netcdf_track.js",
+            "title": "Search API for 'NetCDF Track Data' entry type",
+            "description": "API to search for entries of type NetCDF Track Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_ocean_netcdf_track.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_ocean_ooi_dmgx": {
+            "main": "./lib/actions/search_type_point_ocean_ooi_dmgx.js",
+            "title": "Search API for 'OOI Data' entry type",
+            "description": "API to search for entries of type OOI Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_ocean_ooi_dmgx.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_pbo_position_time_series": {
+            "main": "./lib/actions/search_type_point_pbo_position_time_series.js",
+            "title": "Search API for 'PBO Position Time Series' entry type",
+            "description": "API to search for entries of type PBO Position Time Series",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_pbo_position_time_series.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_snotel": {
+            "main": "./lib/actions/search_type_point_snotel.js",
+            "title": "Search API for 'SNOTEL Snow Data' entry type",
+            "description": "API to search for entries of type SNOTEL Snow Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_snotel.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_point_wsbb_ggp": {
+            "main": "./lib/actions/search_type_point_wsbb_ggp.js",
+            "title": "Search API for 'Global Geodynamics GGP Format' entry type",
+            "description": "API to search for entries of type Global Geodynamics GGP Format",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_point_wsbb_ggp.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_psd_monthly_climate_index": {
+            "main": "./lib/actions/search_type_psd_monthly_climate_index.js",
+            "title": "Search API for 'NOAA-ESRL-PSD Monthly Climate Index' entry type",
+            "description": "API to search for entries of type NOAA-ESRL-PSD Monthly Climate Index",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_psd_monthly_climate_index.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_quandl_series": {
+            "main": "./lib/actions/search_type_quandl_series.js",
+            "title": "Search API for 'QUANDL Series' entry type",
+            "description": "API to search for entries of type QUANDL Series",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_quandl_series.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_resilience_assessment": {
+            "main": "./lib/actions/search_type_resilience_assessment.js",
+            "title": "Search API for 'Resiliency Assessment' entry type",
+            "description": "API to search for entries of type Resiliency Assessment",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_resilience_assessment.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_resilience_project": {
+            "main": "./lib/actions/search_type_resilience_project.js",
+            "title": "Search API for 'Resiliency Project' entry type",
+            "description": "API to search for entries of type Resiliency Project",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_resilience_project.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_reuters_document": {
+            "main": "./lib/actions/search_type_reuters_document.js",
+            "title": "Search API for 'Reuters Document' entry type",
+            "description": "API to search for entries of type Reuters Document",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_reuters_document.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_service_group": {
+            "main": "./lib/actions/search_type_service_group.js",
+            "title": "Search API for 'Service Group' entry type",
+            "description": "API to search for entries of type Service Group",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_service_group.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_service_link": {
+            "main": "./lib/actions/search_type_service_link.js",
+            "title": "Search API for 'Service Link' entry type",
+            "description": "API to search for entries of type Service Link",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_service_link.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_socrata_series": {
+            "main": "./lib/actions/search_type_socrata_series.js",
+            "title": "Search API for 'SOCRATA Series' entry type",
+            "description": "API to search for entries of type SOCRATA Series",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_socrata_series.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_urbaninstitute_employment": {
+            "main": "./lib/actions/search_type_urbaninstitute_employment.js",
+            "title": "Search API for 'MetroTrends Employment Data' entry type",
+            "description": "API to search for entries of type MetroTrends Employment Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_urbaninstitute_employment.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_usda_arms_crop": {
+            "main": "./lib/actions/search_type_usda_arms_crop.js",
+            "title": "Search API for 'USDA ARMS Crop Data' entry type",
+            "description": "API to search for entries of type USDA ARMS Crop Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_usda_arms_crop.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_usda_arms_finance": {
+            "main": "./lib/actions/search_type_usda_arms_finance.js",
+            "title": "Search API for 'USDA ARMS Finance Data' entry type",
+            "description": "API to search for entries of type USDA ARMS Finance Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_usda_arms_finance.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_usda_nass": {
+            "main": "./lib/actions/search_type_usda_nass.js",
+            "title": "Search API for 'USDA NASS Data' entry type",
+            "description": "API to search for entries of type USDA NASS Data",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_usda_nass.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_virtual": {
+            "main": "./lib/actions/search_type_virtual.js",
+            "title": "Search API for 'Virtual Group' entry type",
+            "description": "API to search for entries of type Virtual Group",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_virtual.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_wms_capabilities": {
+            "main": "./lib/actions/search_type_wms_capabilities.js",
+            "title": "Search API for 'WMS Capabilities' entry type",
+            "description": "API to search for entries of type WMS Capabilities",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_wms_capabilities.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_type_wms_layer": {
+            "main": "./lib/actions/search_type_wms_layer.js",
+            "title": "Search API for 'WMS Layer' entry type",
+            "description": "API to search for entries of type WMS Layer",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_type_wms_layer.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_ufo_sightings": {
+            "main": "./lib/actions/search_ufo_sightings.js",
+            "title": "Search API for 'Ufo Sightings' entry type",
+            "description": "API to search for entries of type Ufo Sightings",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_ufo_sightings.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_vote_yesno": {
+            "main": "./lib/actions/search_vote_yesno.js",
+            "title": "Search API for 'Simple Yes-No Vote' entry type",
+            "description": "API to search for entries of type Simple Yes-No Vote",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_vote_yesno.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_weblog": {
+            "main": "./lib/actions/search_weblog.js",
+            "title": "Search API for 'Weblog' entry type",
+            "description": "API to search for entries of type Weblog",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_weblog.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "search_wikipage": {
+            "main": "./lib/actions/search_wikipage.js",
+            "title": "Search API for 'Wiki Page' entry type",
+            "description": "API to search for entries of type Wiki Page",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/search_wikipage.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

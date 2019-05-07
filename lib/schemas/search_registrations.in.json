@@ -1,0 +1,131 @@
+{
+    "type": "object",
+    "properties": {
+        "text": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "required": false,
+            "type": "string"
+        },
+        "fromdate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "todate": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "group": {
+            "required": false,
+            "type": "string"
+        },
+        "filesuffix": {
+            "required": false,
+            "type": "string"
+        },
+        "maxlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "minlatitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "maxlongitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "max": {
+            "required": false,
+            "type": "integer"
+        },
+        "skip": {
+            "required": false,
+            "type": "integer"
+        },
+        "createdate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "createdate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "changedate_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "search_db_registrations_date": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_registrations_type": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_registrations_name": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_registrations_email": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_registrations_organization": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_registrations_country": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_registrations_state_province": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_registrations_postal_code": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_registrations_url": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_registrations_users": {
+            "required": false,
+            "type": "integer"
+        },
+        "search_db_registrations_organization_type": {
+            "required": false,
+            "type": "string"
+        },
+        "search_db_registrations_support_tier": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}
